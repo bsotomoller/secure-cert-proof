@@ -1,0 +1,10 @@
+project_id = "ctpgoaddjwppsirxwyky"
+
+[functions.validate]
+verify_jwt = false
+
+[functions.admin-create-certificate]
+verify_jwt = false
+
+[functions.admin-revoke]
+verify_jwt = false
