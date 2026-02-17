@@ -80,7 +80,7 @@ const Validar = () => {
 
       <footer className="border-t py-6 text-center">
         <p className="text-xs text-muted-foreground font-body">
-          © {new Date().getFullYear()} Programas Integridad Chile. Todos los derechos reservados.
+          © {new Date().getFullYear()} Programas de Integridad. Todos los derechos reservados.
         </p>
       </footer>
     </div>

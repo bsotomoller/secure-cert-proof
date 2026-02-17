@@ -100,7 +100,7 @@ async function generatePDF(
   });
 
   // Org name
-  const org = "Programas Integridad Chile";
+  const org = "Programas de Integridad";
   const orgWidth = helvetica.widthOfTextAtSize(org, 12);
   page.drawText(org, {
     x: (width - orgWidth) / 2,

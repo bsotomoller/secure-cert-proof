@@ -25,6 +25,7 @@ export type Database = {
           pdf_url: string | null
           public_code: string
           revoked_at: string | null
+          rut: string | null
           status: string
         }
         Insert: {
@@ -37,6 +38,7 @@ export type Database = {
           pdf_url?: string | null
           public_code: string
           revoked_at?: string | null
+          rut?: string | null
           status?: string
         }
         Update: {
@@ -49,6 +51,7 @@ export type Database = {
           pdf_url?: string | null
           public_code?: string
           revoked_at?: string | null
+          rut?: string | null
           status?: string
         }
         Relationships: []
@@ -85,7 +88,16 @@ export type Database = {
       [_ in never]: never
     }
     Functions: {
-      [_ in never]: never
+      normalize_text: { Args: { input: string }; Returns: string }
+      search_certified_companies: {
+        Args: { search_term: string }
+        Returns: {
+          company_name: string
+          is_certified: boolean
+        }[]
+      }
+      show_limit: { Args: never; Returns: number }
+      show_trgm: { Args: { "": string }; Returns: string[] }
     }
     Enums: {
       [_ in never]: never
