@@ -8,6 +8,7 @@ import Validar from "./pages/Validar";
 import ValidarCode from "./pages/ValidarCode";
 import Login from "./pages/Login";
 import Admin from "./pages/Admin";
+import Empresas from "./pages/Empresas";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -24,6 +25,7 @@ const App = () => (
           <Route path="/validar/:code" element={<ValidarCode />} />
           <Route path="/login" element={<Login />} />
           <Route path="/admin" element={<Admin />} />
+          <Route path="/empresas" element={<Empresas />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
